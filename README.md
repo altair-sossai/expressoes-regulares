@@ -9,6 +9,7 @@ De forma bem resumida, é uma forma de especificar um padrão de texto.
 Grande parte do conteúdo apresentado tem como base o livro *Livro Expressões Regulares - Uma abordagem divertida*, recomendo a compra para apreciar esta obra maravilhosa.
 
 ![Livro Expressões Regulares - Uma abordagem divertida](https://www.piazinho.com.br/ed5/capa-292.jpg)
+
 site: https://www.piazinho.com.br/
 
 ## Teste
@@ -41,7 +42,7 @@ Os metacaracteres possuem funções especificas que podem variar de acordo com o
 |^|Circunflexo|Início de linha|^Bem-vindos|
 |$|Cifrão|Fim de linha|Até mais$|
 |\b|Borda|Início ou fim de palavra|Até mais$|
-|\\|Espace|Torna literal um metacaracteres|Tudo bem\\?|
+| \ |Espace|Torna literal um metacaracteres|Tudo bem\\?|
 |\||Ou|Um ou outro|Amiga\|o|
 |( )|Grupo|delimite um grupo|([0-9]{2})\\.([0-9]{3})|
 |\\n|Retrovisor|Texto casado no grupo n|(\\b\\w+\\b) \1|
@@ -67,7 +68,7 @@ O metacaractere lista ( [] ) em uma expressão regular casa um conjunto predefin
 |Expressão|Casa com|
 |-|-|
 |Re[vs]ista|Revista, Resista|
-|<[pabPAB]>|<p>, <a>, <b>, <P>, <A>, <B>|
+|<[pabPAB]>|\<p>, \<a>, \<b>, \<P>, \<A>, \<B>|
 |[0123]|0, 1, 2, 3|
 
 Em uma lista é possível especificar um intervalo através do caractere hífen ( - ), o intervalo leva em consideração a posição do caractere na tabela ASCII - https://www.ascii-code.com/
@@ -82,7 +83,7 @@ O metacaractere lista negada ( [^] ) em uma expressão regular casa qualquer car
 |Expressão|Casa com|
 |-|-|
 |Re[^vs]ista|Remista, Redista|
-|<[^pabPAB]>|<x>, <y>|
+|<[^pabPAB]>|\<x>, \<y>|
 |[^0123]|4, 5, 6, 7, @, A|
 
 Em uma lista negada também é possível especificar um intervalo através do caractere hífen ( - ), o intervalo leva em consideração a posição do caractere na tabela ASCII - https://www.ascii-code.com/
