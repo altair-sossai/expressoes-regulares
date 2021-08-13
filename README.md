@@ -37,14 +37,17 @@ Os metacaracteres possuem funções especificas que podem variar de acordo com o
 |?|Opcional|Torna opcional a existência da entidade anterior, devendo ocorrer zero ou uma vez|Casas?|
 |\*|Asterisco|A entidade anterior pode ocorrer em qualquer quantidade, zero ou mais vezes|oii\*|
 |+|Mais|A entidade anterior deve ocorrer uma ou mais vezes|oi+|
-|{n, m}|Chaves|Especifica uma quantidade de vezes que a entidade anterior deve ocorrer|oi{1, 4}|
+|{n,m}|Chaves|Especifica uma quantidade de vezes que a entidade anterior deve ocorrer|oi{1,4}|
 |^|Circunflexo|Início de linha|^Bem-vindos|
 |$|Cifrão|Fim de linha|Até mais$|
-|\b|Borda|Início ou fim de palavra|\bComo vai\?\b|
+|\b|Borda|Início ou fim de palavra|\bdia\b|
+||||dia, bom-dia, melodia, diafragma, radial|
 | \ |Espace|Torna literal um metacaracteres|Tudo bem\\?|
-|\||Ou|Um ou outro|Amiga\|o|
-|( )|Grupo|delimite um grupo|(amigo)\|(amiga)|
+|\||Ou|Um ou outro|amigo\|amiga|
+|( )|Grupo|delimita um grupo|^O (sabiá) (não) (sabia) (que) o sábio \3 \4 o \1 \2 \3 assobiar$|
+||||O sabiá não sabia que o sábio sabia que o sabiá não sabia assobiar|
 |\\n|Retrovisor|Texto casado no grupo n|(\\b\\w+\\b) \1|
+||||Identifica a ocorrência de palavras palavras repetidas|
 
 ### Ponto ( . )
 O metacaractere ponto (.) em uma expressão regular casa com qualquer outro caractere.
@@ -62,8 +65,8 @@ Caso seja necessário casar o caractere literal ponto ( . ), é possível utiliz
 
 **Observação:** O caractere ponto ( . ) dentro de uma lista perde seu poder de casar qualquer caractere, isto também ocorre com outros metacaracteres.
 
-### Lista ( [] )
-O metacaractere lista ( [] ) em uma expressão regular casa um conjunto predefinido de caracteres.
+### Lista ( [ ] )
+O metacaractere lista ( [ ] ) em uma expressão regular casa um conjunto de caracteres.
 |Expressão|Casa com|
 |-|-|
 |Re[vs]ista|Revista, Resista|
@@ -99,11 +102,11 @@ O metacaractere opcional ( ? ) em uma expressão regular permite que a entidade 
 |Natural?|Natura, Natural|
 |Desaparece[rum!]?|Desaparece, Desaparecer, Desapareceu, Desaparecem, Desaparece!|
 
-Uma outra forma de expressar o metacaractere opcional ( ? ) é utilizando o metacaractere chaves ( {n, m} )
+Uma outra forma de expressar o metacaractere opcional ( ? ) é utilizando o metacaractere chaves ( {n,m} )
 |Expressão|Casa com|
 |-|-|
-|Natural{0, 1}|Natura, Natural|
-|Desaparece[rum!]{0, 1}|Desaparece, Desaparecer, Desapareceu, Desaparecem, Desaparece!|
+|Natural{0,1}|Natura, Natural|
+|Desaparece[rum!]{0,1}|Desaparece, Desaparecer, Desapareceu, Desaparecem, Desaparece!|
 
 ### Asterisco ( * )
 O metacaractere asterisco ( * ) em uma expressão regular permite que a entidade anterior ocorra em qualquer quantidade
@@ -112,7 +115,7 @@ O metacaractere asterisco ( * ) em uma expressão regular permite que a entidade
 |Natural*|Natura, Natural, Naturalllllllllllllll|
 |Desaparece[rum!]*|Desaparece, Desaparecerrr, Desapareceu!!!!, Desaparecem!!!rrrrmmmmuuu, Desaparece!|
 
-Uma outra forma de expressar o metacaractere asterisco ( * ) é utilizando o metacaractere chaves ( {n, m} )
+Uma outra forma de expressar o metacaractere asterisco ( * ) é utilizando o metacaractere chaves ( {n,m} )
 |Expressão|Casa com|
 |-|-|
 |Natural{0,}|Natura, Natural, Naturalllllllllllllll|
@@ -131,14 +134,14 @@ Uma outra forma de expressar o metacaractere mais ( + ) é utilizando o metacara
 |Natural{1,}|Natural, Naturalllllllllllllll|
 |Desaparece[rum!]{1,}|Desaparecerrr, Desapareceu!!!!, Desaparecem!!!rrrrmmmmuuu, Desaparece!|
 
-### Chaves ( {n, m} )
-O metacaractere chaves ( {n, m} ) em uma expressão regular permite especificar a quantidade exata de vezes que a entidade anterior deve ocorrer
+### Chaves ( {n,m} )
+O metacaractere chaves ( {n,m} ) em uma expressão regular permite especificar a quantidade exata de vezes que a entidade anterior deve ocorrer
 |Expressão|Descrição|
 |-|-|
-|{2, 3}|Deve ocorrer de 2 até 3 vezes|
-|{0, 4}|Deve ocorrer até 4 vezes|
-|{3, 3}|Exatamente 3 vezes|
+|{2,3}|Deve ocorrer de 2 até 3 vezes|
+|{0,4}|Deve ocorrer até 4 vezes|
+|{3,3}|Exatamente 3 vezes|
 |{3}|Exatamente 3 vezes|
-|{0, 1}|Deve ocorrer até 1 vez, igual ao opcional ( ? )|
+|{0,1}|Deve ocorrer até 1 vez, igual ao opcional ( ? )|
 |{0,}|Deve ocorrer 0 ou mais vezes, igual ao asterisco ( * )|
 |{1,}|Deve ocorrer pelo menos 1 vez, igual ao mais ( + )|
