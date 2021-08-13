@@ -1,12 +1,11 @@
 # Expressões regulares
 Em ciência da computação, uma expressão regular ou "Regex" provê uma forma concisa e flexível de identificar cadeias de caracteres de interesse, como caracteres particulares, palavras ou padrões de caracteres. 
-Expressões regulares são escritas numa linguagem formal que pode ser interpretada por um processador de expressão regular, um programa que serve um gerador de analisador sintático ou examina o texto e identifica as partes que casam com a especificação dada.
-Fonte: https://pt.wikipedia.org/wiki/Express%C3%A3o_regular
+Expressões regulares são escritas numa linguagem formal que pode ser interpretada por um processador de expressão regular, um programa que serve um gerador de analisador sintático ou examina o texto e identifica as partes que casam com a especificação dada. Fonte: https://pt.wikipedia.org/wiki/Express%C3%A3o_regular
 
 De forma bem resumida, é uma forma de especificar um padrão de texto.
 
 ## Fonte
-Grande parte do conteúdo apresentado tem como base o livro *Livro Expressões Regulares - Uma abordagem divertida*, recomendo a compra para apreciar esta obra maravilhosa.
+Grande parte do conteúdo apresentado tem como base o livro **Livro Expressões Regulares - Uma abordagem divertida**, recomendo a compra para apreciar esta obra maravilhosa.
 
 ![Livro Expressões Regulares - Uma abordagem divertida](https://www.piazinho.com.br/ed5/capa-292.jpg)
 
@@ -38,13 +37,13 @@ Os metacaracteres possuem funções especificas que podem variar de acordo com o
 |?|Opcional|Torna opcional a existência da entidade anterior, devendo ocorrer zero ou uma vez|Casas?|
 |\*|Asterisco|A entidade anterior pode ocorrer em qualquer quantidade, zero ou mais vezes|oii\*|
 |+|Mais|A entidade anterior deve ocorrer uma ou mais vezes|oi+|
-|{n,m}|Chaves|Especifica uma quantidade de vezes que a entidade anterior deve ocorrer|oi{1,4}|
+|{n, m}|Chaves|Especifica uma quantidade de vezes que a entidade anterior deve ocorrer|oi{1, 4}|
 |^|Circunflexo|Início de linha|^Bem-vindos|
 |$|Cifrão|Fim de linha|Até mais$|
-|\b|Borda|Início ou fim de palavra|Até mais$|
+|\b|Borda|Início ou fim de palavra|\bComo vai\?\b|
 | \ |Espace|Torna literal um metacaracteres|Tudo bem\\?|
 |\||Ou|Um ou outro|Amiga\|o|
-|( )|Grupo|delimite um grupo|([0-9]{2})\\.([0-9]{3})|
+|( )|Grupo|delimite um grupo|(amigo)\|(amiga)|
 |\\n|Retrovisor|Texto casado no grupo n|(\\b\\w+\\b) \1|
 
 ### Ponto ( . )
