@@ -193,3 +193,10 @@ O metacaractere grupo ( ( ) ) em uma expressão regular permite agrupar express�
 |amig(a\|o)|Casa com o literal amiga ou amigo|
 |(haha)+|Casa o literal haha uma ou mais vezes|
 |(www\\.)?github\\.com(\\.br)?|Casa com github.com, github.com.br, www.github.com, www.github.com.br|
+
+### Retrovisor ( \n )
+O metacaractere retrovisor ( \n ) em uma expressão regular permite acessar o texto casado em um determinado grupo
+|Expressão|Descrição|
+|-|-|
+|(quero)-\1|Casa com o literal quero-quero|
+|(\b\w+\b)-\1|Casa duas palavras iguais separadas por um hífen, por exemplo, quero-quero, quebra-quebra|
