@@ -145,3 +145,28 @@ O metacaractere chaves ( {n,m} ) em uma expressão regular permite especificar a
 |{0,1}|Deve ocorrer até 1 vez, igual ao opcional ( ? )|
 |{0,}|Deve ocorrer 0 ou mais vezes, igual ao asterisco ( * )|
 |{1,}|Deve ocorrer pelo menos 1 vez, igual ao mais ( + )|
+
+### Circunflexo: Início de linha ( ^ )
+O metacaractere circunflexo ( ^ ) em uma expressão regular marca o inicio de linha
+|Expressão|Descrição|
+|-|-|
+|^[0-9]|Casa todas as linhas que iniciam com números|
+|^[^0-9]|Casa todas as linhas que não iniciam com números |
+
+### Cifrão: Fim de linha ( $ )
+O metacaractere cifrão ( $ ) em uma expressão regular marca o fim de linha
+|Expressão|Descrição|
+|-|-|
+|[0-9]$|Casa todas as linhas que finalizam com números|
+|[^0-9]$|Casa todas as linhas que não finalizam com números|
+
+### Borda ( \b )
+O metacaractere borda ( \b ) em uma expressão regular marca a borda entre as palavras
+|Expressão|Descrição|
+|-|-|
+|dia|Casa dia em qualquer parte da palavra|
+|\bdia|Casa apenas palavras que iniciam com dia|
+|dia\b|Casa apenas palavras que terminam com dia|
+|\bdia\b|Casa a palavra dia por completo|
+
+**Exemplo:** dia, diafragma, melodia, radial, bom-dia!
