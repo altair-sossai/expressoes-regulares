@@ -5,7 +5,7 @@ Expressões regulares são escritas numa linguagem formal que pode ser interpret
 De forma bem resumida, é uma forma de especificar um padrão de texto.
 
 ## Fonte
-Grande parte do conteúdo apresentado tem como base o livro **Livro Expressões Regulares - Uma abordagem divertida**, recomendo a compra para apreciar esta obra maravilhosa.
+Grande parte do conteúdo apresentado tem como base o livro **Expressões Regulares - Uma abordagem divertida**, recomendo a compra para apreciar esta obra maravilhosa.
 
 ![Livro Expressões Regulares - Uma abordagem divertida](https://www.piazinho.com.br/ed5/capa-292.jpg)
 
@@ -157,8 +157,8 @@ O metacaractere circunflexo ( ^ ) em uma expressão regular marca o inicio de li
 O metacaractere cifrão ( $ ) em uma expressão regular marca o fim de linha
 |Expressão|Descrição|
 |-|-|
-|[0-9]$|Casa todas as linhas que finalizam com números|
-|[^0-9]$|Casa todas as linhas que não finalizam com números|
+|[0-9]$|Casa todas as linhas que terminam com números|
+|[^0-9]$|Casa todas as linhas que não terminam com números|
 
 ### Borda ( \b )
 O metacaractere borda ( \b ) em uma expressão regular marca a borda entre as palavras
