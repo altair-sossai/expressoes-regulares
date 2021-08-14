@@ -185,3 +185,11 @@ O metacaractere ou ( | ) em uma expressão regular torna possível casar com dua
 |boa-tarde\|boa-noite|Casa com o literal boa-tarde ou boa-noite ||
 |boa-(tarde\|noite)|Casa com o literal boa-tarde ou boa-noite ||
 |amig(a\|o)|Casa com o literal amiga ou amigo|amig[ao]|
+
+### Grupo ( ( ) )
+O metacaractere grupo ( ( ) ) em uma expressão regular permite agrupar expressões regulares e potencializar o uso dos outros metacaracteres
+|Expressão|Descrição|
+|-|-|
+|amig(a\|o)|Casa com o literal amiga ou amigo|
+|(haha)+|Casa o literal haha uma ou mais vezes|
+|(www\\.)?github\\.com(\\.br)?|Casa com github.com, github.com.br, www.github.com, www.github.com.br|
