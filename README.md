@@ -177,3 +177,11 @@ O metacaractere escape ( \ ) em uma expressão regular desativa o poder de um me
 |10 \\+ 20|Casa com o literal 10 + 20|10 [+] 20|
 |\\$|Casa com o literal $|[$]|
 |\\.|Casa com o literal .|[.]|
+
+### Ou ( | )
+O metacaractere ou ( | ) em uma expressão regular torna possível casar com duas ou mais opções
+|Expressão|Descrição|Equivalente|
+|-|-|-|
+|boa-tarde\|boa-noite|Casa com o literal boa-tarde ou boa-noite ||
+|boa-(tarde\|noite)|Casa com o literal boa-tarde ou boa-noite ||
+|amig(a\|o)|Casa com o literal amiga ou amigo|amig[ao]|
