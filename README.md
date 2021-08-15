@@ -46,7 +46,7 @@ Os metacaracteres possuem funções especificas que podem variar de acordo com o
 |\||Ou|Um ou outro|amigo\|amiga|
 |( )|Grupo|delimita um grupo|^O (sabiá) (não) (sabia) (que) o sábio \3 \4 o \1 \2 \3 assobiar$|
 ||||O sabiá não sabia que o sábio sabia que o sabiá não sabia assobiar|
-|\\n|Retrovisor|Texto casado no grupo n|(\\b\\w+\\b) \1|
+|\\1..\\9|Retrovisor|Texto casado no grupo n|(\\b\\w+\\b) \1|
 ||||Identifica a ocorrência de palavras palavras repetidas|
 
 ### Ponto ( . )
@@ -194,8 +194,8 @@ O metacaractere grupo ( ( ) ) em uma expressão regular permite agrupar express�
 |(haha)+|Casa o literal haha uma ou mais vezes|
 |(www\\.)?github\\.com(\\.br)?|Casa com github.com, github.com.br, www.github.com, www.github.com.br|
 
-### Retrovisor ( \n )
-O metacaractere retrovisor ( \n ) em uma expressão regular permite acessar o texto casado em um determinado grupo
+### Retrovisor ( \1..\9 )
+O metacaractere retrovisor ( \1..\9 ) em uma expressão regular permite acessar o texto casado em um determinado grupo
 |Expressão|Descrição|
 |-|-|
 |(quero)-\1|Casa com o literal quero-quero|
