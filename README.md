@@ -149,6 +149,13 @@ Uma outra forma de expressar o metacaractere mais ( + ) é utilizando o metacara
 |Natural{1,}|Natural, Naturalllllllllllllll|
 |Desaparece[rum!]{1,}|Desaparecerrr, Desapareceu!!!!, Desaparecem!!!rrrrmmmmuuu, Desaparece!|
 
+### Resumo ? + *
+|Expressão|Descrição|Equivalente|
+|-|-|-|
+|?|Deve ocorrer 0 ou 1 vez|{0,1}|
+|*|Deve ocorrer 0 ou mais vezes|{0,}|
+|+|Deve ocorrer 1 ou mais vezes|{1,}|
+
 ### Chaves ( {n,m} )
 O metacaractere chaves ( {n,m} ) em uma expressão regular permite especificar a quantidade exata de vezes que a entidade anterior deve ocorrer
 |Expressão|Descrição|
