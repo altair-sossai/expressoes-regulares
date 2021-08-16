@@ -5,7 +5,7 @@ Expressões regulares são escritas numa linguagem formal que pode ser interpret
 De forma bem resumida, é uma forma de especificar um padrão de texto.
 
 ## Fonte
-Grande parte do conteúdo apresentado tem como base o livro **Expressões Regulares - Uma abordagem divertida**, recomendo a compra para apreciar esta obra maravilhosa.
+Grande parte do conteúdo apresentado tem como base o livro **Livro Expressões Regulares - Uma abordagem divertida**, recomendo a compra para apreciar esta obra maravilhosa.
 
 ![Livro Expressões Regulares - Uma abordagem divertida](https://www.piazinho.com.br/ed5/capa-292.jpg)
 
@@ -25,6 +25,21 @@ Na pratica, as expressões regulares servem para uma infinidade de tarefas, elas
 - Conteúdos entre tags
 - Número de documentos (CPF/RG)
 - Entre outras infinitas possibilidades
+
+## Linguagens de programação
+Uma grande variedade de linguagens de programação tem suporte a expressões regulares, algumas de forma nativa, outras através de pacotes de terceiros. 
+
+É importante ressaltar que podem existir pequenas variações entre as linguagens, a grande maioria dos itens apresentado neste documento são suportados em todas as linguagens abaixo, porém, é sempre importante consultar a documentação para garantir um bom funcionamento.
+
+- C# (dotnet core / full framework)
+- JavaScript / TypeScript
+- Java
+- Python
+- Ruby
+- Go
+- C / C++
+- Entre outras
+
 
 ## Metacaracteres
 Os metacaracteres possuem funções especificas que podem variar de acordo com o contexto no qual estão inseridos, permitindo serem combinados para aumentar o poder de cada um deles.
@@ -46,7 +61,7 @@ Os metacaracteres possuem funções especificas que podem variar de acordo com o
 |\||Ou|Um ou outro|amigo\|amiga|
 |( )|Grupo|delimita um grupo|^O (sabiá) (não) (sabia) (que) o sábio \3 \4 o \1 \2 \3 assobiar$|
 ||||O sabiá não sabia que o sábio sabia que o sabiá não sabia assobiar|
-|\\1..\\9|Retrovisor|Texto casado no grupo n|(\\b\\w+\\b) \1|
+|\\n|Retrovisor|Texto casado no grupo n|(\\b\\w+\\b) \1|
 ||||Identifica a ocorrência de palavras palavras repetidas|
 
 ### Ponto ( . )
@@ -145,58 +160,3 @@ O metacaractere chaves ( {n,m} ) em uma expressão regular permite especificar a
 |{0,1}|Deve ocorrer até 1 vez, igual ao opcional ( ? )|
 |{0,}|Deve ocorrer 0 ou mais vezes, igual ao asterisco ( * )|
 |{1,}|Deve ocorrer pelo menos 1 vez, igual ao mais ( + )|
-
-### Circunflexo: Início de linha ( ^ )
-O metacaractere circunflexo ( ^ ) em uma expressão regular marca o inicio de linha
-|Expressão|Descrição|
-|-|-|
-|^[0-9]|Casa todas as linhas que iniciam com números|
-|^[^0-9]|Casa todas as linhas que não iniciam com números |
-
-### Cifrão: Fim de linha ( $ )
-O metacaractere cifrão ( $ ) em uma expressão regular marca o fim de linha
-|Expressão|Descrição|
-|-|-|
-|[0-9]$|Casa todas as linhas que terminam com números|
-|[^0-9]$|Casa todas as linhas que não terminam com números|
-
-### Borda ( \b )
-O metacaractere borda ( \b ) em uma expressão regular marca a borda entre as palavras
-|Expressão|Descrição|
-|-|-|
-|dia|Casa dia em qualquer parte da palavra|
-|\bdia|Casa apenas palavras que iniciam com dia|
-|dia\b|Casa apenas palavras que terminam com dia|
-|\bdia\b|Casa a palavra dia por completo|
-**Exemplo:** dia, diafragma, melodia, radial, bom-dia!
-
-### Escape ( \ )
-O metacaractere escape ( \ ) em uma expressão regular desativa o poder de um metacaractere
-|Expressão|Descrição|Equivalente|
-|-|-|-|
-|10 \\+ 20|Casa com o literal 10 + 20|10 [+] 20|
-|\\$|Casa com o literal $|[$]|
-|\\.|Casa com o literal .|[.]|
-
-### Ou ( | )
-O metacaractere ou ( | ) em uma expressão regular torna possível casar com duas ou mais opções
-|Expressão|Descrição|Equivalente|
-|-|-|-|
-|boa-tarde\|boa-noite|Casa com o literal boa-tarde ou boa-noite ||
-|boa-(tarde\|noite)|Casa com o literal boa-tarde ou boa-noite ||
-|amig(a\|o)|Casa com o literal amiga ou amigo|amig[ao]|
-
-### Grupo ( ( ) )
-O metacaractere grupo ( ( ) ) em uma expressão regular permite agrupar expressões regulares e potencializar o uso dos outros metacaracteres
-|Expressão|Descrição|
-|-|-|
-|amig(a\|o)|Casa com o literal amiga ou amigo|
-|(haha)+|Casa o literal haha uma ou mais vezes|
-|(www\\.)?github\\.com(\\.br)?|Casa com github.com, github.com.br, www.github.com, www.github.com.br|
-
-### Retrovisor ( \1..\9 )
-O metacaractere retrovisor ( \1..\9 ) em uma expressão regular permite acessar o texto casado em um determinado grupo
-|Expressão|Descrição|
-|-|-|
-|(quero)-\1|Casa com o literal quero-quero|
-|(\b\w+\b)-\1|Casa duas palavras iguais separadas por um hífen, por exemplo, quero-quero, quebra-quebra|
