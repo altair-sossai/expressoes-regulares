@@ -149,7 +149,7 @@ Uma outra forma de expressar o metacaractere mais ( + ) é utilizando o metacara
 |Natural{1,}|Natural, Naturalllllllllllllll|
 |Desaparece[rum!]{1,}|Desaparecerrr, Desapareceu!!!!, Desaparecem!!!rrrrmmmmuuu, Desaparece!|
 
-### Resumo ? + *
+### Resumo ( ? ), ( + ) e ( * )
 |Expressão|Descrição|Equivalente|
 |-|-|-|
 |?|Deve ocorrer 0 ou 1 vez|{0,1}|
