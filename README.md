@@ -58,7 +58,7 @@ Os metacaracteres possuem funções especificas que podem variar de acordo com o
 ||||dia, bom-dia, melodia, diafragma, radial|
 | \ |Espace|Torna literal um metacaracteres|Tudo bem\\?|
 |\||Ou|Um ou outro|amigo\|amiga|
-|( )|Grupo|delimita um grupo|^O (sabiá) (não) (sabia) (que) o sábio \3 \4 o \1 \2 \3 assobiar$|
+|( )|Grupo|Delimita um grupo|^O (sabiá) (não) (sabia) (que) o sábio \3 \4 o \1 \2 \3 assobiar$|
 ||||O sabiá não sabia que o sábio sabia que o sabiá não sabia assobiar|
 |\\1..\\9|Retrovisor|Texto casado no grupo n|(\\b\\w+\\b) \1|
 ||||Identifica a ocorrência de palavras palavras repetidas|
