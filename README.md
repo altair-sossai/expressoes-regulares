@@ -189,6 +189,7 @@ O metacaractere borda ( \b ) em uma expressão regular marca a borda entre as pa
 |\bdia|Casa apenas palavras que iniciam com dia|
 |dia\b|Casa apenas palavras que terminam com dia|
 |\bdia\b|Casa a palavra dia por completo|
+|\Bdia\B|Casa a palavra dia dentro de outras palavras|
 **Exemplo:** dia, diafragma, melodia, radial, bom-dia!
 
 ### Escape ( \ )
