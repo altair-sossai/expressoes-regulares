@@ -1,0 +1,27 @@
+# Descrição:
+Encontrar todas as ocorrências da tags <img> que não possuem o atribulo alt
+
+# Entrada
+<section>
+    <div class="voltar">
+        <img src="ico-voltar.svg" alt="Voltar" (click)="voltar()" />
+        <img src="ico-voltar.svg" alt="" (click)="voltar()" />
+    </div>
+
+    <div class="container">
+        <app-locked-screen *ngIf="!loaded" icon="../../assets/ico-camera.svg" [animated]="true" message="Carregando...">
+        </app-locked-screen>
+
+        <img class="biometria" (load)="loaded = true" alt="Biometria atual"/>
+
+        <img class="biometria"/>
+
+        <div class="acoes">
+            <annecy-button type="primary" size="lg" fluid text="Continuar" (anClick)="continuar()" [brand]="brand">
+            </annecy-button>
+        </div>
+    </div>
+</section>
+
+# Solução
+<img(?!.*alt="(\w|\s)+").*/>

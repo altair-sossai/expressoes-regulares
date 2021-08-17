@@ -1,0 +1,14 @@
+# Descrição:
+Crie uma expressão regular que identifique números de telefone no padrão (99) 99999-9999 ou (99) 99999-9999.
+
+# Entrada
+(19) 99824-2984
+(11) 3555-3451
+99824-2984
+3555-3451
+
+# Solução
+^\((\d{2})\)\s(\d{4,5}-\d{4})$
+
+# Replace
+O número do meu telefone é $2 com DDD $1

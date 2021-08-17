@@ -1,0 +1,11 @@
+# Descrição:
+Crie uma expressão regular que identifique horários no padrão HH:MM em relógios de 12 horas
+
+# Entrada
+00:00
+05:30
+10:50
+13:00
+
+# Solução
+^(1[0-2]|0[0-9]):([0-5][0-9])$
