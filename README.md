@@ -9,7 +9,14 @@ Grande parte do conteúdo apresentado tem como base o livro **Expressões Regula
 
 ![Livro Expressões Regulares - Uma abordagem divertida](https://www.piazinho.com.br/ed5/capa-292.jpg)
 
-site: https://www.piazinho.com.br/
+Site: https://www.piazinho.com.br/
+
+## Expressões Regulares Cookbook
+Este livro oferece mais de 100 receitas que vão ajudá-lo a manipular dados e textos usando expressões regulares. Todo programador deve entender um pouco de expressões regulares, mas aproveitá-las plenamente não é tão simples assim. Mesmo os usuários mais experientes, muitas vezes, sofrem com baixo desempenho, falsos positivos, falsos negativos ou defeitos imprevisíveis. Expressões Regulares Cookbook oferece orientação detalhada para algumas das tarefas mais comuns envolvendo essa ferramenta, com receitas para C#, Java, JavaScript, Perl, PHP, Python, Ruby e VB.NET.
+
+![Expressões Regulares Cookbook](https://images-na.ssl-images-amazon.com/images/I/512WUfzhAsL._SX360_BO1,204,203,200_.jpg)
+
+Compre em: https://www.amazon.com.br/Express%C3%B5es-Regulares-Cookbook-Jan-Goyvaerts/dp/8575222791
 
 ## Teste
 Todos os exemplos apresentados podem ser testados no site https://www.regexpal.com/
@@ -222,14 +229,3 @@ O metacaractere retrovisor ( \1...\9 ) em uma expressão regular permite acessar
 |-|-|
 |(quero)-\1|Casa com o literal quero-quero|
 |(\b\w+\b)-\1|Casa duas palavras iguais separadas por um hífen, por exemplo, quero-quero, quebra-quebra|
-
-## Metacaracteres adicionais
-Abaixo um consolidado de alguns metacaracteres frequentemente utilizados na construção de expressões regulares.
-|Expressão|Casa com|Equivalente|
-|-|-|-|
-|\\w|Casa com a-z, A-Z, 0-9 ou _ |[a-zA-Z0-9_]|
-|\\W|Casa com todos os caracteres, exceto os presentes em \w |[^a-zA-Z0-9_]|
-|\\d|Casa com 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 |[0-9]|
-|\\D|Casa com todos os caracteres, exceto os presentes em \d |[^0-9]|
-|\\s|Casa com qualquer caractere de espaço em branco|[\\r\\n\\t\\f\\v ]|
-|\\S|Casa com todos os caracteres, exceto os presentes em \s |[^\\r\\n\\t\\f\\v ]|
