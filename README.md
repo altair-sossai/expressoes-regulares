@@ -229,3 +229,14 @@ O metacaractere retrovisor ( \1...\9 ) em uma expressão regular permite acessar
 |-|-|
 |(quero)-\1|Casa com o literal quero-quero|
 |(\b\w+\b)-\1|Casa duas palavras iguais separadas por um hífen, por exemplo, quero-quero, quebra-quebra|
+
+## Metacaracteres adicionais
+Abaixo um consolidado de alguns metacaracteres frequentemente utilizados na construção de expressões regulares.
+|Expressão|Casa com|Equivalente|
+|-|-|-|
+|\\w|Casa com a-z, A-Z, 0-9 ou _ |[a-zA-Z0-9_]|
+|\\W|Casa com todos os caracteres, exceto os presentes em \w |[^a-zA-Z0-9_]|
+|\\d|Casa com 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 |[0-9]|
+|\\D|Casa com todos os caracteres, exceto os presentes em \d |[^0-9]|
+|\\s|Casa com qualquer caractere de espaço em branco|[\\r\\n\\t\\f\\v ]|
+|\\S|Casa com todos os caracteres, exceto os presentes em \s |[^\\r\\n\\t\\f\\v ]|
