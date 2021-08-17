@@ -1,0 +1,25 @@
+# Descrição:
+Dado um script PostgreSQL, "public" e as aspas do nome das tabelas.
+
+# Entrada
+CREATE TABLE "public"."TB_PROPOSTA" ( 
+    "ID" uuid NOT NULL, 
+    "CPF" varchar(11) NOT NULL, 
+    "USUARIO" varchar(11) NOT NULL, 
+    "STATUS" integer NOT NULL, 
+    "DATA" timestamp NOT NULL DEFAULT now(), 
+CONSTRAINT "PK_TB_PROPOSTA" PRIMARY KEY ("ID"));;
+
+CREATE TABLE "public"."TB_PROPOSTA_DADOS_MINIMOS" (
+    "ID_PROPOSTA" uuid NOT NULL, 
+    "NOME" varchar(300) NOT NULL, 
+    "CPF" varchar(11) NOT NULL, 
+    "EMAIL" varchar(250) NOT NULL, 
+    "CELULAR" varchar(15) NOT NULL, 
+CONSTRAINT "PK_TB_PROPOSTA_DADOS_MINIMOS" PRIMARY KEY ("ID_PROPOSTA"));
+
+# Solução
+"public"\."(\w+)"
+
+# Replace
+$1
