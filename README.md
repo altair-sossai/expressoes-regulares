@@ -9,7 +9,14 @@ Grande parte do conteúdo apresentado tem como base o livro **Expressões Regula
 
 ![Livro Expressões Regulares - Uma abordagem divertida](https://www.piazinho.com.br/ed5/capa-292.jpg)
 
-site: https://www.piazinho.com.br/
+Site: https://www.piazinho.com.br/
+
+## Expressões Regulares Cookbook
+Este livro oferece mais de 100 receitas que vão ajudá-lo a manipular dados e textos usando expressões regulares. Todo programador deve entender um pouco de expressões regulares, mas aproveitá-las plenamente não é tão simples assim. Mesmo os usuários mais experientes, muitas vezes, sofrem com baixo desempenho, falsos positivos, falsos negativos ou defeitos imprevisíveis. Expressões Regulares Cookbook oferece orientação detalhada para algumas das tarefas mais comuns envolvendo essa ferramenta, com receitas para C#, Java, JavaScript, Perl, PHP, Python, Ruby e VB.NET.
+
+![Expressões Regulares Cookbook](https://images-na.ssl-images-amazon.com/images/I/512WUfzhAsL._SX360_BO1,204,203,200_.jpg)
+
+Compre em: https://www.amazon.com.br/Express%C3%B5es-Regulares-Cookbook-Jan-Goyvaerts/dp/8575222791
 
 ## Teste
 Todos os exemplos apresentados podem ser testados no site https://www.regexpal.com/
