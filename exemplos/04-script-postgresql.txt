@@ -1,5 +1,5 @@
 # Descrição:
-Dado um script PostgreSQL, "public" e as aspas do nome das tabelas.
+Dado um script PostgreSQL, remover os "public" e as aspas do nome das tabelas.
 
 # Entrada
 CREATE TABLE "public"."TB_PROPOSTA" ( 
