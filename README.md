@@ -127,6 +127,9 @@ O metacaractere opcional ( ? ) em uma expressão regular permite que a entidade 
 |Desaparece[rum!]?|Desaparece, Desaparecer, Desapareceu, Desaparecem, Desaparece!|
 
 Uma outra forma de expressar o metacaractere opcional ( ? ) é utilizando o metacaractere chaves ( {n,m} )
+
+**Observação:** Para utilizar a versão não gulosa do opcional, utilize o metacaractere ( ?? )
+
 |Expressão|Casa com|
 |-|-|
 |Natural{0,1}|Natura, Natural|
@@ -140,6 +143,9 @@ O metacaractere asterisco ( * ) em uma expressão regular permite que a entidade
 |Desaparece[rum!]*|Desaparece, Desaparecerrr, Desapareceu!!!!, Desaparecem!!!rrrrmmmmuuu, Desaparece!|
 
 Uma outra forma de expressar o metacaractere asterisco ( * ) é utilizando o metacaractere chaves ( {n,m} )
+
+**Observação:** Para utilizar a versão não gulosa do asterisco, utilize o metacaractere ( *? )
+
 |Expressão|Casa com|
 |-|-|
 |Natural{0,}|Natura, Natural, Naturalllllllllllllll|
@@ -153,6 +159,9 @@ O metacaractere mais ( + ) em uma expressão regular permite que a entidade ante
 |Desaparece[rum!]+|Desaparecerrr, Desapareceu!!!!, Desaparecem!!!rrrrmmmmuuu, Desaparece!|
 
 Uma outra forma de expressar o metacaractere mais ( + ) é utilizando o metacaractere chaves ( {n, m} )
+
+**Observação:** Para utilizar a versão não gulosa do mais, utilize o metacaractere ( +? )
+
 |Expressão|Casa com|
 |-|-|
 |Natural{1,}|Natural, Naturalllllllllllllll|
@@ -176,6 +185,8 @@ O metacaractere chaves ( {n,m} ) em uma expressão regular permite especificar a
 |{0,1}|Deve ocorrer até 1 vez, igual ao opcional ( ? )|
 |{0,}|Deve ocorrer 0 ou mais vezes, igual ao asterisco ( * )|
 |{1,}|Deve ocorrer pelo menos 1 vez, igual ao mais ( + )|
+
+**Observação:** Para utilizar a versão não gulosa das chaves, utilize o metacaractere ( {n,m}? )
 
 ### Circunflexo: Início de linha ( ^ )
 O metacaractere circunflexo ( ^ ) em uma expressão regular marca o inicio de linha
