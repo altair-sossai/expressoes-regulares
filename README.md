@@ -240,3 +240,20 @@ Abaixo um consolidado de alguns metacaracteres frequentemente utilizados na cons
 |\\D|Casa com todos os caracteres, exceto os presentes em \d |[^0-9]|
 |\\s|Casa com qualquer caractere de espaço em branco|[\\r\\n\\t\\f\\v ]|
 |\\S|Casa com todos os caracteres, exceto os presentes em \s |[^\\r\\n\\t\\f\\v ]|
+
+## Links Úteis
+Abaixo alguns links para conhecer um pouco mais sobre o uso de expressões regulares
+
+**Regex Cross­word:** 
+<br/>
+Jogo de palavras cruzadas utilizando expressões regulares<br/>
+https://regexcrossword.com
+
+**Regex Class (C#):**<br/>
+Documentação oficial Microsoft das classes de uso de expressões regulares em dotnet<br/>
+*https://docs.microsoft.com/pt-br/dotnet/api/system.text.regularexpressions.regex?view=net-5.0*
+
+**HackerRank - Regex:** 
+<br/>
+Problemas no formato ‘Maratona de Programação’ que devem ser resolvidos utilizando expressões regulares<br/>
+https://www.hackerrank.com/domains/regex
