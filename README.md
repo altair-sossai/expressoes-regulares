@@ -258,8 +258,11 @@ Abaixo um consolidado de alguns metacaracteres frequentemente utilizados na cons
 ## Links Úteis
 Abaixo alguns links para conhecer um pouco mais sobre o uso de expressões regulares
 
-**Regex Cross­word:** 
-<br/>
+**Lookahead and Lookbehind**<br/>
+Tutorial sobre os recursos de lookahead e lookbehind<br/>
+*https://www.regular-expressions.info/lookaround.html*
+
+**Regex Cross­word:** <br/>
 Jogo de palavras cruzadas utilizando expressões regulares<br/>
 *https://regexcrossword.com*
 
@@ -267,7 +270,6 @@ Jogo de palavras cruzadas utilizando expressões regulares<br/>
 Documentação oficial Microsoft das classes de uso de expressões regulares em dotnet<br/>
 *https://docs.microsoft.com/pt-br/dotnet/api/system.text.regularexpressions.regex?view=net-5.0*
 
-**HackerRank - Regex:** 
-<br/>
+**HackerRank - Regex:** <br/>
 Problemas no formato ‘Maratona de Programação’ que devem ser resolvidos utilizando expressões regulares<br/>
 *https://www.hackerrank.com/domains/regex*
