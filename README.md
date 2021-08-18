@@ -247,7 +247,7 @@ Abaixo alguns links para conhecer um pouco mais sobre o uso de expressões regul
 **Regex Cross­word:** 
 <br/>
 Jogo de palavras cruzadas utilizando expressões regulares<br/>
-https://regexcrossword.com
+*https://regexcrossword.com*
 
 **Regex Class (C#):**<br/>
 Documentação oficial Microsoft das classes de uso de expressões regulares em dotnet<br/>
@@ -256,4 +256,4 @@ Documentação oficial Microsoft das classes de uso de expressões regulares em 
 **HackerRank - Regex:** 
 <br/>
 Problemas no formato ‘Maratona de Programação’ que devem ser resolvidos utilizando expressões regulares<br/>
-https://www.hackerrank.com/domains/regex
+*https://www.hackerrank.com/domains/regex*
