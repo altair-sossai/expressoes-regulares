@@ -19,7 +19,10 @@ Este livro oferece mais de 100 receitas que vão ajudá-lo a manipular dados e t
 Compre em: https://www.amazon.com.br/Express%C3%B5es-Regulares-Cookbook-Jan-Goyvaerts/dp/8575222791
 
 ## Teste
-Todos os exemplos apresentados podem ser testados no site https://www.regexpal.com/
+Todas as expressões regulares apresentadas neste documento podem ser testadas através dos sites abaixo:
+- https://www.regexpal.com/
+- https://regexr.com/
+- https://regex101.com/
 
 ## Aplicações
 Na pratica, as expressões regulares servem para uma infinidade de tarefas, elas são uteis sempre que você precisa buscar ou validar um padrão de texto, podem ser utilizadas, por exemplo, para os seguintes itens:
