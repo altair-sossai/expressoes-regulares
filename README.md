@@ -36,6 +36,27 @@ Na pratica, as expressões regulares servem para uma infinidade de tarefas, elas
 - Número de documentos (CPF/RG)
 - Entre outras infinitas possibilidades
 
+## Use com moderação
+Expressões regulares podem ser aplicadas para uma infinidade de problemas, mas isso não significa que você deva utilizar.
+
+Em alguns cenários o uso de expressões regulares pode se tornar extremamente complexo e difícil de dar manutenção, veja abaixo o exemplo para validar datas no formato DD/MM/YYYY
+
+```
+^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$
+```
+https://stackoverflow.com/questions/15491894/regex-to-validate-date-format-dd-mm-yyyy-with-leap-year-support
+
+```csharp
+const string input = "19/08/2012";
+const string format = "dd/MM/yyyy";
+
+DateTime.TryParseExact(input, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateTime);
+```
+
+Sempre se questione sobre opções além do uso de expressões regulares para resolver um problema, por exemplo, devo fazer o parse de arquivos .xml, .json. yaml ou .html utilizando expressões regulares?
+
+Não seria mais interessante utilizar uma biblioteca para isso? Como por exemplo Newtonsoft para JSON e HtmlAgilityPack para HTML?
+
 ## Linguagens de programação
 Uma grande variedade de linguagens de programação tem suporte a expressões regulares, algumas de forma nativa, outras através de pacotes de terceiros. 
 
