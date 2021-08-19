@@ -6,7 +6,7 @@ Fonte: https://pt.wikipedia.org/wiki/Express%C3%A3o_regular
 
 De forma bem resumida, é uma forma de especificar um padrão de texto
 
-## Fonte
+## Expressões Regulares - Uma abordagem divertida
 Grande parte do conteúdo apresentado tem como base o livro **Expressões Regulares - Uma abordagem divertida**, recomendo a compra para apreciar esta obra maravilhosa.
 
 ![Livro Expressões Regulares - Uma abordagem divertida](https://www.piazinho.com.br/ed5/capa-292.jpg)
@@ -20,7 +20,7 @@ Este livro oferece mais de 100 receitas que vão ajudá-lo a manipular dados e t
 
 Compre em: https://www.amazon.com.br/Express%C3%B5es-Regulares-Cookbook-Jan-Goyvaerts/dp/8575222791
 
-## Teste
+## Testes
 Todas as expressões regulares apresentadas neste documento podem ser testadas através dos sites abaixo:
 - https://www.regexpal.com/
 - https://regexr.com/
@@ -284,6 +284,11 @@ Abaixo alguns links para conhecer um pouco mais sobre o uso de expressões regul
 **Lookahead and Lookbehind**<br/>
 Tutorial sobre os recursos de lookahead e lookbehind<br/>
 *https://www.regular-expressions.info/lookaround.html*
+
+**Regular Expression Tips**<br/>
+Learn to use regular expressions by following RegexTip. From 
+@JohnDCook<br/>
+*https://twitter.com/RegexTip*
 
 **Regex Cross­word:** <br/>
 Jogo de palavras cruzadas utilizando expressões regulares<br/>
