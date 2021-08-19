@@ -1,8 +1,10 @@
 # Expressões regulares
 Em ciência da computação, uma expressão regular ou "Regex" provê uma forma concisa e flexível de identificar cadeias de caracteres de interesse, como caracteres particulares, palavras ou padrões de caracteres. 
-Expressões regulares são escritas numa linguagem formal que pode ser interpretada por um processador de expressão regular, um programa que serve um gerador de analisador sintático ou examina o texto e identifica as partes que casam com a especificação dada. Fonte: https://pt.wikipedia.org/wiki/Express%C3%A3o_regular
+Expressões regulares são escritas numa linguagem formal que pode ser interpretada por um processador de expressão regular, um programa que serve um gerador de analisador sintático ou examina o texto e identifica as partes que casam com a especificação dada. 
 
-De forma bem resumida, é uma forma de especificar um padrão de texto.
+Fonte: https://pt.wikipedia.org/wiki/Express%C3%A3o_regular
+
+De forma bem resumida, é uma forma de especificar um padrão de texto
 
 ## Fonte
 Grande parte do conteúdo apresentado tem como base o livro **Expressões Regulares - Uma abordagem divertida**, recomendo a compra para apreciar esta obra maravilhosa.
@@ -25,7 +27,7 @@ Todas as expressões regulares apresentadas neste documento podem ser testadas a
 - https://regex101.com/
 
 ## Aplicações
-Na pratica, as expressões regulares servem para uma infinidade de tarefas, elas são uteis sempre que você precisa buscar ou validar um padrão de texto, podem ser utilizadas, por exemplo, para os seguintes itens:
+Na pratica, as expressões regulares podem ser aplicadas para uma infinidade de tarefas, elas são uteis sempre que você precisa buscar ou validar um padrão de texto, podem ser utilizadas, por exemplo, para os seguintes itens:
 
 - Data e/ou hora nos mais diversos formatos
 - Número IP
