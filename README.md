@@ -76,21 +76,25 @@ Uma grande variedade de linguagens de programação tem suporte a expressões re
 ### Exemplo de uso utilizando C#
 O código abaixo faz uso da classe Regex para encontrar todas as palavras que iniciam com a letra M e exibi-las no console.
 ```csharp
-// Create a pattern for a word that starts with letter "M"  
-var pattern = @"\b[M]\w+";  
+// Create a pattern for a word that starts with letter "M"
+const string pattern = @"\b[M]\w+";
 
-// Create a Regex  
-var regex = new Regex(pattern);  
-  
-// Long string  
-var authors = "Mahesh Chand, Raj Kumar, Mike Gold, Allen O'Neill, Marshal Troll";
+// Long string
+const string authors = "Mahesh Chand, Raj Kumar, Mike Gold, Allen O'Neill, Marshal Troll";
 
-// Get all matches  
+// Create a Regex
+var regex = new Regex(pattern);
+
+// Get all matches
 var matches = regex.Matches(authors);
 
-// Print all matched authors  
-for (int count = 0; count < matches.Count; count++)  
-    Console.WriteLine(matches[count].Value);  
+// Print all matched authors
+foreach (Match match in matches)
+{
+    Console.WriteLine(match.Value);
+}
+
+// output: Mahesh, Mike, Marshal
 ```
 **Fonte:** *https://www.c-sharpcorner.com/article/c-sharp-regex-examples/*
 
