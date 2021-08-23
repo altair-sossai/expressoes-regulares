@@ -4,7 +4,7 @@ Expressões regulares são escritas numa linguagem formal que pode ser interpret
 
 Fonte: https://pt.wikipedia.org/wiki/Express%C3%A3o_regular
 
-De forma bem resumida, é uma forma de especificar um padrão de texto.
+De forma bem resumida, expressões regulares permitem encontrar padrões de textos e manipulá-los.
 
 ## Expressões Regulares - Uma abordagem divertida
 Grande parte do conteúdo apresentado tem como base o livro **Expressões Regulares - Uma abordagem divertida**, recomendo a compra para apreciar esta obra maravilhosa.
@@ -73,6 +73,25 @@ Uma grande variedade de linguagens de programação tem suporte a expressões re
 - C / C++
 - Entre outras
 
+### Exemplo de uso utilizando C#
+```csharp
+// Create a pattern for a word that starts with letter "M"  
+var pattern = @"\b[M]\w+";  
+
+// Create a Regex  
+var regex = new Regex(pattern);  
+  
+// Long string  
+var authors = "Mahesh Chand, Raj Kumar, Mike Gold, Allen O'Neill, Marshal Troll";
+
+// Get all matches  
+var matches = regex.Matches(authors);
+
+// Print all matched authors  
+for (int count = 0; count < matches.Count; count++)  
+    Console.WriteLine(matches[count].Value);  
+```
+**Fonte:** *https://www.c-sharpcorner.com/article/c-sharp-regex-examples/*
 ## Metacaracteres
 Os metacaracteres possuem funções especificas que podem variar de acordo com o contexto no qual estão inseridos, permitindo serem combinados para aumentar o poder de cada um deles.
 
