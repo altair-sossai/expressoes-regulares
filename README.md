@@ -94,7 +94,7 @@ for (int count = 0; count < matches.Count; count++)
 ```
 **Fonte:** *https://www.c-sharpcorner.com/article/c-sharp-regex-examples/*
 
-**Documentação classe Regex**: *https://docs.microsoft.com/pt-br/dotnet/api/system.text.regularexpressions.regex?view=net-5.0*
+**Regex class**: *https://docs.microsoft.com/pt-br/dotnet/api/system.text.regularexpressions.regex?view=net-5.0*
 
 ## Metacaracteres
 Os metacaracteres possuem funções especificas que podem variar de acordo com o contexto no qual estão inseridos, permitindo serem combinados para aumentar o poder de cada um deles.
