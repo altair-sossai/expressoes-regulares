@@ -4,7 +4,7 @@ Expressões regulares são escritas numa linguagem formal que pode ser interpret
 
 Fonte: https://pt.wikipedia.org/wiki/Express%C3%A3o_regular
 
-De forma bem resumida, é uma forma de especificar um padrão de texto
+De forma bem resumida, é uma forma de especificar um padrão de texto.
 
 ## Expressões Regulares - Uma abordagem divertida
 Grande parte do conteúdo apresentado tem como base o livro **Expressões Regulares - Uma abordagem divertida**, recomendo a compra para apreciar esta obra maravilhosa.
@@ -41,23 +41,23 @@ Na pratica, as expressões regulares podem ser aplicadas para uma infinidade de 
 ## Use com moderação
 Expressões regulares podem ser aplicadas para uma infinidade de problemas, mas isso não significa que você deva utilizar.
 
-Em alguns cenários o uso de expressões regulares pode se tornar extremamente complexo e difícil de dar manutenção, veja abaixo o exemplo para validar datas no formato DD/MM/YYYY
+Em alguns cenários o uso de expressões regulares pode se tornar extremamente complexo e difícil de dar manutenção, veja abaixo o exemplo para validar datas no formato DD/MM/YYYY.
 
 ```
 ^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$
 ```
-https://stackoverflow.com/questions/15491894/regex-to-validate-date-format-dd-mm-yyyy-with-leap-year-support
+**Fonte:** *https://stackoverflow.com/questions/15491894/regex-to-validate-date-format-dd-mm-yyyy-with-leap-year-support*
 
+Abaixo, um exemplo de validação de data no mesmo formato (DD/MM/YYYY) utilizando o tipo DateTime do C#.
 ```csharp
 const string input = "19/08/2012";
 const string format = "dd/MM/yyyy";
 
 DateTime.TryParseExact(input, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateTime);
 ```
+Ambos os exemplos resolvem um problema em comum utilizando técnicas diferentes, talvez não seja uma comparação justa, mas o objetivo é apresentar o quão complexo uma expressão regular pode se tornar em relação a outras técnicas.
 
-Sempre se questione sobre opções além do uso de expressões regulares para resolver um problema, por exemplo, devo fazer o parse de arquivos .xml, .json. yaml ou .html utilizando expressões regulares?
-
-Não seria mais interessante utilizar uma biblioteca para isso? Como por exemplo Newtonsoft para JSON e HtmlAgilityPack para HTML?
+Sempre se questione sobre opções além do uso de expressões regulares para resolver um problema, por exemplo, devo fazer o parse de arquivos .xml, .json .yaml ou .html utilizando expressões regulares? Não seria mais interessante utilizar uma biblioteca para isso? Como por exemplo Newtonsoft para JSON e HtmlAgilityPack para HTML?
 
 ## Linguagens de programação
 Uma grande variedade de linguagens de programação tem suporte a expressões regulares, algumas de forma nativa, outras através de pacotes de terceiros. 
@@ -104,7 +104,8 @@ O metacaractere ponto (.) em uma expressão regular casa com qualquer outro cara
 |.lpiste|Alpiste, alpiste, _lpiste|
 |Final feliz.|Final feliz., Final feliz!, Final feliz@|
 
-Caso seja necessário casar o caractere literal ponto ( . ), é possível utilizando o Escape ( \\ ) ou adiciona-lo em uma lista ( [] )
+Caso seja necessário casar o caractere literal ponto ( . ), é possível utilizando o Escape ( \\ ) ou adiciona-lo em uma lista ( [] ).
+
 |Expressão|Casa com|Não casa com|
 |-|-|-|
 |Final feliz\\.|Final feliz.|Final feliz!, Final feliz@
@@ -128,7 +129,7 @@ Em uma lista é possível especificar um intervalo através do caractere hífen 
 |[0-9]|Números de 0 até 9|
 
 ### Lista negada ( [^] )
-O metacaractere lista negada ( [^] ) em uma expressão regular casa qualquer caractere não presente na lista
+O metacaractere lista negada ( [^] ) em uma expressão regular casa qualquer caractere não presente na lista.
 |Expressão|Casa com|
 |-|-|
 |Re[^vs]ista|Remista, Redista|
@@ -143,15 +144,15 @@ Em uma lista negada também é possível especificar um intervalo através do ca
 |[^0-9]|Casa com qualquer caractere não presente entre 0 até 9|
 
 ### Opcional ( ? )
-O metacaractere opcional ( ? ) em uma expressão regular permite que a entidade anterior ocorra zero ou uma vez
+O metacaractere opcional ( ? ) em uma expressão regular permite que a entidade anterior ocorra zero ou uma vez.
 |Expressão|Casa com|
 |-|-|
 |Natural?|Natura, Natural|
 |Desaparece[rum!]?|Desaparece, Desaparecer, Desapareceu, Desaparecem, Desaparece!|
 
-Uma outra forma de expressar o metacaractere opcional ( ? ) é utilizando o metacaractere chaves ( {n,m} )
+Uma outra forma de expressar o metacaractere opcional ( ? ) é utilizando o metacaractere chaves ( {n,m} ).
 
-**Observação:** Para utilizar a versão não gulosa do opcional, utilize o metacaractere ( ?? )
+**Observação:** Para utilizar a versão não gulosa do opcional, utilize o metacaractere ( ?? ).
 
 |Expressão|Casa com|
 |-|-|
@@ -159,15 +160,15 @@ Uma outra forma de expressar o metacaractere opcional ( ? ) é utilizando o meta
 |Desaparece[rum!]{0,1}|Desaparece, Desaparecer, Desapareceu, Desaparecem, Desaparece!|
 
 ### Asterisco ( * )
-O metacaractere asterisco ( * ) em uma expressão regular permite que a entidade anterior ocorra em qualquer quantidade
+O metacaractere asterisco ( * ) em uma expressão regular permite que a entidade anterior ocorra em qualquer quantidade.
 |Expressão|Casa com|
 |-|-|
 |Natural*|Natura, Natural, Naturalllllllllllllll|
 |Desaparece[rum!]*|Desaparece, Desaparecerrr, Desapareceu!!!!, Desaparecem!!!rrrrmmmmuuu, Desaparece!|
 
-Uma outra forma de expressar o metacaractere asterisco ( * ) é utilizando o metacaractere chaves ( {n,m} )
+Uma outra forma de expressar o metacaractere asterisco ( * ) é utilizando o metacaractere chaves ( {n,m} ).
 
-**Observação:** Para utilizar a versão não gulosa do asterisco, utilize o metacaractere ( *? )
+**Observação:** Para utilizar a versão não gulosa do asterisco, utilize o metacaractere ( *? ).
 
 |Expressão|Casa com|
 |-|-|
@@ -175,15 +176,15 @@ Uma outra forma de expressar o metacaractere asterisco ( * ) é utilizando o met
 |Desaparece[rum!]{0,}|Desaparece, Desaparecerrr, Desapareceu!!!!, Desaparecem!!!rrrrmmmmuuu, Desaparece!|
 
 ### Mais ( + )
-O metacaractere mais ( + ) em uma expressão regular permite que a entidade anterior ocorra uma ou mais vezes
+O metacaractere mais ( + ) em uma expressão regular permite que a entidade anterior ocorra uma ou mais vezes.
 |Expressão|Casa com|
 |-|-|
 |Natural+|Natural, Naturalllllllllllllll|
 |Desaparece[rum!]+|Desaparecerrr, Desapareceu!!!!, Desaparecem!!!rrrrmmmmuuu, Desaparece!|
 
-Uma outra forma de expressar o metacaractere mais ( + ) é utilizando o metacaractere chaves ( {n, m} )
+Uma outra forma de expressar o metacaractere mais ( + ) é utilizando o metacaractere chaves ( {n, m} ).
 
-**Observação:** Para utilizar a versão não gulosa do mais, utilize o metacaractere ( +? )
+**Observação:** Para utilizar a versão não gulosa do mais, utilize o metacaractere ( +? ).
 
 |Expressão|Casa com|
 |-|-|
@@ -198,7 +199,7 @@ Uma outra forma de expressar o metacaractere mais ( + ) é utilizando o metacara
 |+|Deve ocorrer 1 ou mais vezes|{1,}|
 
 ### Chaves ( {n,m} )
-O metacaractere chaves ( {n,m} ) em uma expressão regular permite especificar a quantidade exata de vezes que a entidade anterior deve ocorrer
+O metacaractere chaves ( {n,m} ) em uma expressão regular permite especificar a quantidade exata de vezes que a entidade anterior deve ocorrer.
 |Expressão|Descrição|
 |-|-|
 |{2,3}|Deve ocorrer de 2 até 3 vezes|
@@ -212,21 +213,21 @@ O metacaractere chaves ( {n,m} ) em uma expressão regular permite especificar a
 **Observação:** Para utilizar a versão não gulosa das chaves, utilize o metacaractere ( {n,m}? )
 
 ### Circunflexo: Início de linha ( ^ )
-O metacaractere circunflexo ( ^ ) em uma expressão regular marca o inicio de linha
+O metacaractere circunflexo ( ^ ) em uma expressão regular marca o inicio de linha.
 |Expressão|Descrição|
 |-|-|
 |^[0-9]|Casa todas as linhas que iniciam com números|
 |^[^0-9]|Casa todas as linhas que não iniciam com números |
 
 ### Cifrão: Fim de linha ( $ )
-O metacaractere cifrão ( $ ) em uma expressão regular marca o fim de linha
+O metacaractere cifrão ( $ ) em uma expressão regular marca o fim de linha.
 |Expressão|Descrição|
 |-|-|
 |[0-9]$|Casa todas as linhas que terminam com números|
 |[^0-9]$|Casa todas as linhas que não terminam com números|
 
 ### Borda ( \b )
-O metacaractere borda ( \b ) em uma expressão regular marca a borda entre as palavras
+O metacaractere borda ( \b ) em uma expressão regular marca a borda entre as palavras.
 |Expressão|Descrição|
 |-|-|
 |dia|Casa dia em qualquer parte da palavra|
@@ -237,7 +238,7 @@ O metacaractere borda ( \b ) em uma expressão regular marca a borda entre as pa
 **Exemplo:** dia, diafragma, melodia, radial, bom-dia!
 
 ### Escape ( \ )
-O metacaractere escape ( \ ) em uma expressão regular desativa o poder de um metacaractere
+O metacaractere escape ( \ ) em uma expressão regular desativa o poder de um metacaractere.
 |Expressão|Descrição|Equivalente|
 |-|-|-|
 |10 \\+ 20|Casa com o literal 10 + 20|10 [+] 20|
@@ -245,7 +246,7 @@ O metacaractere escape ( \ ) em uma expressão regular desativa o poder de um me
 |\\.|Casa com o literal .|[.]|
 
 ### Ou ( | )
-O metacaractere ou ( | ) em uma expressão regular torna possível casar com duas ou mais opções
+O metacaractere ou ( | ) em uma expressão regular torna possível casar com duas ou mais opções.
 |Expressão|Descrição|Equivalente|
 |-|-|-|
 |boa-tarde\|boa-noite|Casa com o literal boa-tarde ou boa-noite ||
@@ -253,7 +254,7 @@ O metacaractere ou ( | ) em uma expressão regular torna possível casar com dua
 |amig(a\|o)|Casa com o literal amiga ou amigo|amig[ao]|
 
 ### Grupo ( ( ) )
-O metacaractere grupo ( ( ) ) em uma expressão regular permite agrupar expressões regulares e potencializar o uso dos outros metacaracteres
+O metacaractere grupo ( ( ) ) em uma expressão regular permite agrupar expressões regulares e potencializar o uso dos outros metacaracteres.
 |Expressão|Descrição|
 |-|-|
 |amig(a\|o)|Casa com o literal amiga ou amigo|
@@ -261,7 +262,7 @@ O metacaractere grupo ( ( ) ) em uma expressão regular permite agrupar express�
 |(www\\.)?github\\.com(\\.br)?|Casa com github.com, github.com.br, www.github.com, www.github.com.br|
 
 ### Retrovisor ( \1...\9 )
-O metacaractere retrovisor ( \1...\9 ) em uma expressão regular permite acessar o texto casado em um determinado grupo
+O metacaractere retrovisor ( \1...\9 ) em uma expressão regular permite acessar o texto casado em um determinado grupo.
 |Expressão|Descrição|
 |-|-|
 |(quero)-\1|Casa com o literal quero-quero|
@@ -279,7 +280,7 @@ Abaixo um consolidado de alguns metacaracteres frequentemente utilizados na cons
 |\\S|Casa com todos os caracteres, exceto os presentes em \s |[^\\r\\n\\t\\f\\v ]|
 
 ## Links Úteis
-Abaixo alguns links para conhecer um pouco mais sobre o uso de expressões regulares
+Abaixo alguns links para conhecer um pouco mais sobre o uso de expressões regulares.
 
 **Lookahead and Lookbehind**<br/>
 Tutorial sobre os recursos de lookahead e lookbehind<br/>
