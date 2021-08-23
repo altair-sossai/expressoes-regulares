@@ -57,7 +57,7 @@ DateTime.TryParseExact(input, format, CultureInfo.InvariantCulture, DateTimeStyl
 ```
 Ambos os exemplos resolvem um problema em comum utilizando técnicas diferentes, talvez não seja uma comparação justa, mas o objetivo é apresentar o quão complexo uma expressão regular pode se tornar em relação a outras técnicas.
 
-Sempre se questione sobre opções além do uso de expressões regulares para resolver um problema, por exemplo, devo fazer o parse de arquivos .xml, .json .yaml ou .html utilizando expressões regulares? Não seria mais interessante utilizar uma biblioteca para isso? Como por exemplo Newtonsoft para JSON e HtmlAgilityPack para HTML?
+Sempre se questione sobre opções além do uso de expressões regulares para resolver um problema, por exemplo, devo fazer o parse de arquivos .xml, .json .yaml ou .html utilizando expressões regulares? Não seria mais interessante utilizar uma biblioteca para isso, por exemplo, Newtonsoft para JSON e HtmlAgilityPack para HTML?
 
 ## Linguagens de programação
 Uma grande variedade de linguagens de programação tem suporte a expressões regulares, algumas de forma nativa, outras através de pacotes de terceiros. 
