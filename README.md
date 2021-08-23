@@ -74,6 +74,7 @@ Uma grande variedade de linguagens de programação tem suporte a expressões re
 - Entre outras
 
 ### Exemplo de uso utilizando C#
+O código abaixo faz uso da classe Regex para encontrar todas as palavras que iniciam com a letra M e exibi-las no console.
 ```csharp
 // Create a pattern for a word that starts with letter "M"  
 var pattern = @"\b[M]\w+";  
@@ -92,6 +93,9 @@ for (int count = 0; count < matches.Count; count++)
     Console.WriteLine(matches[count].Value);  
 ```
 **Fonte:** *https://www.c-sharpcorner.com/article/c-sharp-regex-examples/*
+
+**Documentação classe Regex**: *https://docs.microsoft.com/pt-br/dotnet/api/system.text.regularexpressions.regex?view=net-5.0*
+
 ## Metacaracteres
 Os metacaracteres possuem funções especificas que podem variar de acordo com o contexto no qual estão inseridos, permitindo serem combinados para aumentar o poder de cada um deles.
 
