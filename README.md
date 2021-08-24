@@ -100,6 +100,17 @@ foreach (Match match in matches)
 
 **Regex class**: *https://docs.microsoft.com/pt-br/dotnet/api/system.text.regularexpressions.regex?view=net-5.0*
 
+## Banco de dados
+Alguns bancos de dados relacionais também fornecem suporte a expressões regulares, é importante ressaltar que assim como nas linguagens de programação, podem existir pequenas variações entre os recursos disponíveis.
+
+Abaixo uma lista dos mais conhecidos.
+
+- MySQL
+- Oracle
+- PostgreSQL
+- SQLite
+- SQL Server
+
 ## Metacaracteres
 Os metacaracteres possuem funções especificas que podem variar de acordo com o contexto no qual estão inseridos, permitindo serem combinados para aumentar o poder de cada um deles.
 
