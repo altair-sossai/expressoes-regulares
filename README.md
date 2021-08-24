@@ -60,6 +60,10 @@ Ambos os exemplos resolvem um problema em comum utilizando técnicas diferentes,
 Sempre se questione sobre opções além do uso de expressões regulares para resolver um problema, por exemplo, devo fazer o parse de arquivos .xml, .json .yaml ou .html utilizando expressões regulares? Não seria mais interessante utilizar uma biblioteca para isso, por exemplo, Newtonsoft para JSON e HtmlAgilityPack para HTML?
 
 ## NÃO utilize RegEx no caminho crítico
+O artigo publicado pelo autor Elemar Jr, apresenta de forma bem didática os problemas de performance presente no uso de expressões regulares, no artigo é apresentado um problema de comparação de strings utilizando expressões regulares em C#.
+
+Em resumo, ao realizar 1.000.000 de chamadas utilizando expressões regulares o tempo médio de execução foi de 10 segundos com o uso massivo do Garbage Collector, por outro lado, ao utilizar técnicas alternativas a expressões regulares o tempo de execução foi de 22 milissegundos (440x mais rápido) e sem uso do Garbage Collector.
+
 > Expressões regulares são fantásticas. Entretanto, precisam ser utilizadas com moderação pois podem impactar de forma perceptível a performance.
 
 **Leia mais sobre:** *https://elemarjr.com/arquivo/nao-utilize-regex-no-caminho-critico/*
