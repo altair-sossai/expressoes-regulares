@@ -26,6 +26,13 @@ Todas as expressões regulares apresentadas neste documento podem ser testadas a
 - https://regexr.com/
 - https://regex101.com/
 
+## RegExp Preview
+RegExp Preview é uma extensão disponível para o *Visual Studio Code* que permite visualizar expressões regulares de forma visual, facilitando muito a compreensão de expressões complexas.
+
+![RegExp Preview](https://github.com/altair-sossai/expressoes-regulares/raw/master/imgs/reg-exp-preview.gif)
+
+**Download da extensão:** *https://marketplace.visualstudio.com/items?itemName=LouisWT.regexp-preview*
+
 ## Aplicações
 Na pratica, as expressões regulares podem ser aplicadas para uma infinidade de tarefas, elas são uteis sempre que você precisa buscar ou validar um padrão de texto, podem ser utilizadas, por exemplo, para os seguintes itens:
 
@@ -119,14 +126,6 @@ Abaixo uma lista dos mais conhecidos.
 - PostgreSQL
 - SQLite
 - SQL Server
-
-## RegExp Preview
-RegExp Preview é uma extensão disponível para o *Visual Studio Code* que permite visualizar expressões regulares de forma visual, facilitando muito a compreensão de expressões complexas.
-
-![RegExp Preview](https://github.com/altair-sossai/expressoes-regulares/raw/master/imgs/reg-exp-preview.gif)
-
-
-**Download da extensão:** *https://marketplace.visualstudio.com/items?itemName=LouisWT.regexp-preview*
 
 ## Metacaracteres
 Os metacaracteres possuem funções especificas que podem variar de acordo com o contexto no qual estão inseridos, permitindo serem combinados para aumentar o poder de cada um deles.
