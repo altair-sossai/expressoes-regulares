@@ -123,7 +123,7 @@ Abaixo uma lista dos mais conhecidos.
 ## RegExp Preview
 RegExp Preview é uma extensão disponível para o *Visual Studio Code* que permite visualizar expressões regulares de forma visual, facilitando muito a compreensão de expressões complexas.
 
-![Livro Expressões Regulares - Uma abordagem divertida](https://i.loli.net/2017/08/18/59968e8dde40c.gif)
+![RegExp Preview](https://i.loli.net/2017/08/18/59968e8dde40c.gif)
 
 
 **Download da extensão:** *https://marketplace.visualstudio.com/items?itemName=LouisWT.regexp-preview*
