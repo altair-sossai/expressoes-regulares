@@ -120,6 +120,14 @@ Abaixo uma lista dos mais conhecidos.
 - SQLite
 - SQL Server
 
+## RegExp Preview
+RegExp Preview é uma extensão disponível para o *Visual Studio Code* que permite visualizar expressões regulares de forma visual, facilitando muito a compreensão de expressões complexas.
+
+![Livro Expressões Regulares - Uma abordagem divertida](https://i.loli.net/2017/08/18/59968e8dde40c.gif)
+
+
+**Download da extensão:** *https://marketplace.visualstudio.com/items?itemName=LouisWT.regexp-preview*
+
 ## Metacaracteres
 Os metacaracteres possuem funções especificas que podem variar de acordo com o contexto no qual estão inseridos, permitindo serem combinados para aumentar o poder de cada um deles.
 
