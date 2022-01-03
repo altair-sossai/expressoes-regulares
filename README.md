@@ -33,6 +33,13 @@ RegExp Preview é uma extensão disponível para o *Visual Studio Code* que perm
 
 **Download da extensão:** *https://marketplace.visualstudio.com/items?itemName=LouisWT.regexp-preview*
 
+## Apresentação no evento DevPira 2021
+Durante o ano de 2021 tive a oportunidade de palestrar sobre expressões regulares no evento DevPira, todo o conteúdo presente neste documento foi apresentado no evento e pode ser conferido abaixo:
+
+[![Conhecendo expressões regulares](https://img.youtube.com/vi/cWvzw9FaFqw/0.jpg)](https://www.youtube.com/watch?v=cWvzw9FaFqw)
+
+**Link do video:** *https://www.youtube.com/watch?v=cWvzw9FaFqw*
+
 ## Aplicações
 Na pratica, as expressões regulares podem ser aplicadas para uma infinidade de tarefas, elas são uteis sempre que você precisa buscar ou validar um padrão de texto, podem ser utilizadas, por exemplo, para os seguintes itens:
 
