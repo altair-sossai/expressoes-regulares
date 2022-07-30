@@ -33,6 +33,13 @@ RegExp Preview é uma extensão disponível para o *Visual Studio Code* que perm
 
 **Download da extensão:** *https://marketplace.visualstudio.com/items?itemName=LouisWT.regexp-preview*
 
+## AutoRegex
+Regex é difícil de escrever e compreender para o ser humano. 
+
+Este site usa inteligência artificial para automatizar essa tarefa, traduzindo entre inglês e RegEx.
+
+- https://www.autoregex.xyz/
+
 ## Apresentação no evento DevPira 2021
 Durante o ano de 2021 tive a oportunidade de palestrar sobre expressões regulares no evento DevPira, todo o conteúdo presente neste documento foi apresentado no evento e pode ser conferido abaixo:
 
